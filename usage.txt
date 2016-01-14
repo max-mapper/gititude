@@ -1,0 +1,5 @@
+gititude [--lat --lon --date]
+
+  set        add a new location to the log (stored in ~/.config)
+  list       list all logged locations
+  latest     get latest location
