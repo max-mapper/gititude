@@ -8,7 +8,7 @@ var prompt = require('prompt-sync')
 var child = require('child_process')
 var args = require('minimist')(process.argv.slice(2))
 
-var configPath = homedir() + '/.config'
+var configPath = args.home || (homedir() + '/.config')
 var entries = configPath + '/gititude.txt'
 mkdirp.sync(configPath)
 
