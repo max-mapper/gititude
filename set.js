@@ -54,7 +54,7 @@ if (cmd === 'commit') {
   commit.on('exit', function (code) {
     if (code !== 0) return console.error('UHOH git pooped the bed and exited non-zero-like')
     var tagId = 'gititude-' + +new Date()
-    var tag = child.spawn('git', ['tag', '-m', '"' + JSON.stringify(latest1) + '"', tagId])
+    var tag = child.spawn('git', ['tag', '-m', JSON.stringify(latest1), tagId])
     tag.on('exit', process.exit)
   })
 }
