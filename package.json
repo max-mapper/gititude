@@ -1,12 +1,35 @@
 {
   "name": "gititude",
   "version": "1.0.0",
-  "description": "",
+  "description": "add latitude and longitude to your git commits",
   "main": "index.js",
   "bin": {
     "gititude": "index.js"
   },
   "keywords": [],
-  "author": "",
-  "license": "ISC"
+  "author": "max ogden",
+  "license": "ISC",
+  "scripts": {
+    "test": "node test.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/maxogden/gititude.git"
+  },
+  "bugs": {
+    "url": "https://github.com/maxogden/gititude/issues"
+  },
+  "homepage": "https://github.com/maxogden/gititude#readme",
+  "dependencies": {
+    "home-dir": "^1.0.0",
+    "minimist": "^1.2.0",
+    "mkdirp": "^0.5.1",
+    "prompt-sync": "^3.0.0"
+  },
+  "devDependencies": {
+    "mkdirp": "^0.5.1",
+    "rimraf": "^2.5.0",
+    "tape": "^4.4.0",
+    "tape-spawn": "^1.4.0"
+  }
 }

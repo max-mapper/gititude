@@ -3,7 +3,6 @@
 var homedir = require('home-dir')
 var fs = require('fs')
 var mkdirp = require('mkdirp')
-var wifi = require('wifi-location')
 var prompt = require('prompt-sync')
 var child = require('child_process')
 var args = require('minimist')(process.argv.slice(2))
