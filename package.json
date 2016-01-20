@@ -10,7 +10,7 @@
   "author": "max ogden",
   "license": "ISC",
   "scripts": {
-    "test": "node test.js"
+    "test": "standard && node test.js"
   },
   "repository": {
     "type": "git",
@@ -21,6 +21,7 @@
   },
   "homepage": "https://github.com/maxogden/gititude#readme",
   "dependencies": {
+    "current-location": "^1.1.0",
     "home-dir": "^1.0.0",
     "minimist": "^1.2.0",
     "mkdirp": "^0.5.1",
@@ -29,6 +30,7 @@
   "devDependencies": {
     "mkdirp": "^0.5.1",
     "rimraf": "^2.5.0",
+    "standard": "^5.4.1",
     "tape": "^4.4.0",
     "tape-spawn": "^1.4.0"
   }

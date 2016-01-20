@@ -18,14 +18,14 @@ test('set', function (t) {
 
 test('latest', function (t) {
   var g = spawn(t, bin + ' latest --home=' + tmp)
-  g.stdout.match('[5,5,"1970-01-01T00:00:00.001Z"]\n')
+  g.stdout.match('{"latitude":5,"longitude":5,"timestamp":"1970-01-01T00:00:00.001Z"}\n')
   g.stderr.empty()
   g.end()
 })
 
 test('list', function (t) {
   var g = spawn(t, bin + ' latest --home=' + tmp)
-  g.stdout.match('[5,5,"1970-01-01T00:00:00.001Z"]\n')
+  g.stdout.match('{"latitude":5,"longitude":5,"timestamp":"1970-01-01T00:00:00.001Z"}\n')
   g.stderr.empty()
   g.end()
 })
