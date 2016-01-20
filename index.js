@@ -76,9 +76,9 @@ function latest () {
     var stat = fs.statSync(entries)
     var fd = fs.openSync(entries, 'r')
     var buf = new Buffer(1024)
-    var read = fs.readSync(fd, buf, 0, 1024, stat.length - 1024)
+    var read = fs.readSync(fd, buf, 0, 1024, stat.size - 1024)
     buf = buf.slice(0, read)
-    var lines = buf.toString().trim().split()
+    var lines = buf.toString().trim().split('\n')
     var latest = JSON.parse(lines[lines.length - 1])
     return latest
   } catch (e) {}
